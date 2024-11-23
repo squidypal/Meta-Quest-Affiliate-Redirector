@@ -5,7 +5,6 @@ This Chrome extension redirects Meta Quest Store links to corresponding affiliat
 ## Features
 - **Game Name Normalization**: Handles differences in formatting, ensuring game names match between the Meta Quest Store and the GitHub README.
   - Converts spaces to hyphens (`Beat Saber` → `beat-saber`).
-  - Limits consecutive hyphens to a maximum of two (`beat---saber` → `beat--saber`).
 - **Dynamic Link Updates**: Checks for changes to links on the page every second and updates them as needed.
 - **Redundant Update Prevention**: Marks processed links with a `data-affiliate="true"` attribute to avoid unnecessary reprocessing.
 - **Affiliate Link Management**: Reads and matches game names with affiliate links defined in a GitHub README.
@@ -13,8 +12,8 @@ This Chrome extension redirects Meta Quest Store links to corresponding affiliat
 ---
 
 ## Installation
-[Chrome Page]("")
-[FireFox Page]("")
+- [Chrome Page]("")
+- [FireFox Page]("")
 
 ---
 
@@ -36,7 +35,6 @@ This Chrome extension redirects Meta Quest Store links to corresponding affiliat
      - Example: `The Walking Dead: Saints & Sinners` → `the-walking-dead-saints-sinners`.
 
 3. **Dynamic Updates**:
-   - Links on the Meta Quest Store are checked every second.
    - When a matching affiliate link is found, the link is updated to the affiliate URL.
 
 ---
@@ -51,7 +49,6 @@ This Chrome extension redirects Meta Quest Store links to corresponding affiliat
 
 - **content.js**:
   - Dynamically updates links on the Meta Quest Store.
-  - Uses a timer to check links every second.
 
 ---
 
