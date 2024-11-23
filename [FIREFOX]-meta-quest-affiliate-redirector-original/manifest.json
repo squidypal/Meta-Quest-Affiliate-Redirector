@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Meta Quest Store Affiliate Redirector",
+  "version": "1.0",
+  "description": "Adds 10% off to every Meta store game using Minibattlelop's creator code.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://www.meta.com/*",
+    "https://raw.githubusercontent.com/*"
+  ],
+  "background": {
+    "scripts": ["background.js"] 
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.meta.com/en-gb/experiences/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "metaquest@minibattlelop.com",
+      "strict_min_version": "91.0"
+    }
+  }
+}
